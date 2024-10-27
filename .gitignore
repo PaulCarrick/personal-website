@@ -2,3 +2,4 @@
 *.pxd
 *.mov
 *.mp4
+htdocs/_pgbackup/*
