@@ -15,9 +15,15 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
     </head>
     <body>
-        <div style="width: 100%; height: auto;">
-            <iframe src="header.html" width="100%" height="100" style="border: none;"></iframe>
-        </div>
+        <div id="page_header"></div>
+
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_header').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+
         <section class="bg-light pt-5 text-secondary">
             <div class="container">
                 <div class="align-items-center row">
@@ -34,27 +40,16 @@
                 </div>
             </div>
         </section>
-        <section> 
-            <div class="container"> 
-</div>             
-        </section>
-        <section> 
-            <div class="container"> 
-</div>             
-        </section>
-        <section class="pb-5 pt-5 text-center text-secondary"> 
-            <div class="container  pb-5 pt-5"> 
-                <div class="align-items-center row"> 
-                    <div class="col-lg-7 ms-auto me-auto"> 
-                        <h2 class="fw-bold text-dark">Need a professional senior software engineer?</h2>
-                        <p class="fw-light mb-4">Get one free consultation from our legal experts</p><a href="#" class="btn btn-primary">Contact Paul</a> 
-                    </div>                     
-                </div>                 
-            </div>             
-        </section>
-        <div style="width: 100%; height: auto;">
-            <iframe src="footer.html" width="100%" height="300px" style="border: none;"></iframe>
-        </div>
+
+        <div id="page_footer"></div>
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_footer').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+
         <script src="assets/js/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>

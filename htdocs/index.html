@@ -15,17 +15,24 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
     </head>
     <body>
-        <div style="width: 100%; height: auto;">
-            <iframe src="header.html" width="100%" height="100" style="border: none;"></iframe>
-        </div>
+        <div id="page_header"></div>
+
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_header').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+
         <section class="bg-light pt-5 text-secondary">
             <div class="container">
                 <div class="align-items-center row">
                     <div class="col-lg-6 mb-5">
                         <h1 class="display-4 fw-bold mb-3 text-dark">Paul Carrick</h1>
                         <p class="fw-light lead mb-4">A strong senior software engineer who has many years of experience with abilities and experience in full stack development of web applications. Also experienced in developing backend tools, databases, and stand-alone applications for multiple operating systems.</p>
-                        <a href="#" class="btn btn-primary">Contact Paul</a>
+                        <a href="contact.html" class="btn btn-primary">Contact Paul</a>
                     </div>
+
                     <div class="col-lg-6">
                         <div class=" bg-white mb-n5 p-3 shadow" style="position: relative;">
                             <img src="img/paul-transparent.jpg" class="img-fluid w-100" alt="Hero image" width="640" height="800">
@@ -34,17 +41,16 @@
                 </div>
             </div>
         </section>
-        <section> 
-            <div class="container"> 
-</div>             
-        </section>
-        <section> 
-            <div class="container"> 
-</div>             
-        </section>
-        <div style="width: 100%; height: auto;">
-            <iframe src="footer.html" width="100%" height="300px" style="border: none;"></iframe>
-        </div>
+
+        <div id="page_footer"></div>
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_footer').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+
         <script src="assets/js/popper.min.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
     </body>
