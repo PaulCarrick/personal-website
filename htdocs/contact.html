@@ -4,15 +4,23 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="Pinegrow Web Editor - Professional Services Bootstrap v5 Template">
+        <meta name="description" content="paul-carrick.com - Contact">
         <meta name="author" content="">
-        <title>Blank Template for Bootstrap</title>
+        <title>paul-carrick.com - Contact</title>
         <!-- Bootstrap core CSS -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/blocks.css">
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+        <script src="https://www.google.com/recaptcha/api.js?render=6LfMwnEqAAAAAP2KC-014xjgglMTBwiMWn2BM3Lw"></script>
+        <script>
+            grecaptcha.ready(function() {
+                grecaptcha.execute('6LfMwnEqAAAAAP2KC-014xjgglMTBwiMWn2BM3Lw', {action: 'submit'}).then(function(token) {
+                    document.getElementById('g-recaptcha-response').value = token;
+                });
+            });
+        </script>
     </head>
     <body>
         <div id="page_header"></div>
@@ -26,11 +34,54 @@
 
         <section class="bg-light pt-5 text-secondary">
             <div class="container">
-                <div class="align-items-center row">
-                    <div class="col-lg-12 mb-12">
-                        <h1 class="display-4 fw-bold mb-3 text-dark text-center">Coming Soon</h1>
+                <form action="contact.php" method="POST" id="contactForm">
+                    <div class="align-items-start row mb">
+                        <div class="col-lg-2 mb-3">
+                            <label for="name">Name*:</label>
+                        </div>
+                        <div class="col-lg-10 mb-3">
+                            <input type="text" id="name" name="name" class="w-50" required>
+                        </div>
                     </div>
-                </div>
+                    <div class="align-items-start row">
+                        <div class="col-lg-2 mb-3">
+                            <label for="name">Email*:</label>
+                        </div>
+                        <div class="col-lg-10 mb-3">
+                            <input type="email" id="email" name="email" class="w-50" required>
+                        </div>
+                    </div>
+                    <div class="align-items-start row">
+                        <div class="col-lg-2 mb-3">
+                            <label for="phone">Phone:</label>
+                        </div>
+                        <div class="col-lg-10 mb-3">
+                            <input id="phone" name="phone" class="w-50">
+                        </div>
+                    </div>
+                    <div class="align-items-start row">
+                        <div class="col-lg-2 mb-3">
+                            <label for="message">Message*:</label>
+                        </div>
+                        <div class="col-lg-10 mb-3">
+                            <textarea rows=10 id="message" name="message" class="w-100" required></textarea>
+                        </div>
+                    </div>
+                    <div class="align-items-start row">
+                        <div class="col-lg-12 mb-3">
+                            * - Required field
+                        </div>
+                    </div>
+                    <div class="align-items-start row">
+                        <div class="col-lg-2 mb-3">
+                            <button type="submit" class="btn btn-primary w-100">Send</button>
+                        </div>
+                        <div class="col-lg-10 mb-3">
+                        </div>
+                    </div>
+
+                    <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                </form>
             </div>
         <p></p>
         </section>

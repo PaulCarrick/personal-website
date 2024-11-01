@@ -1,0 +1,17 @@
+{
+    "name": "paul/htdocs",
+    "autoload": {
+        "psr-4": {
+            "Paul\\Htdocs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Paul Carrick",
+            "email": "paulandvirginiacarrick@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
