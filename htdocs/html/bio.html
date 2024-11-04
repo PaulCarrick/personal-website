@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Pinegrow Web Editor - Professional Services Bootstrap v5 Template">
+        <meta name="author" content="">
+        <title>Blank Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/blocks.css">
+        <!-- Custom styles for this template -->
+        <link href="../css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    </head>
+    <body>
+        <div id="page_header"></div>
+
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_header').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+
+        <section class="bg-light pt-5 text-secondary">
+            <div class="container">
+                <div class="align-items-center row">
+                    <div class="col-lg-12 mb-12">
+                        <h1 class="display-4 fw-bold mb-3 text-dark text-center">Coming Soon</h1>
+                    </div>
+                </div>
+            </div>
+        <p></p>
+        </section>
+
+        <div id="page_footer"></div>
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_footer').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

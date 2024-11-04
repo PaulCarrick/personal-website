@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="paul-carrick.com - Employment Experience">
+        <meta name="author" content="">
+        <title>paul-carrick.com - Employment Experience</title>
+        <!-- Bootstrap core CSS -->
+        <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/blocks.css">
+        <!-- Custom styles for this template -->
+        <link href="../css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
+    </head>
+    <body>
+        <div id="page_header"></div>
+
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_header').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+        <section class="bg-light pt-5 text-secondary">
+            <div class="d-flex align-items-baseline">
+                <p class="display-3 fw-bold text-dark mb-0  ms-3">Work History</p>
+                <i class="ms-3 text-muted small">(Reverse Chronological)</i>
+            </div>
+<!--*** VettaFi *** -->
+            <div class="container" id="vettaFi">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                        <a class="text-decoration-none" href="https://vettafi.com" target="_blank">
+                            <h1 class="display-4 fw-bold mb-1 text-dark">Vettafi/TMX</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-1">
+                        <div class="bg-white mb-1 p-3 shadow" style="position: relative;">
+                            <a href="https://vettafi.com" target="_blank">
+                                <img src="../img/vettafi.gif" class="img-fluid w-25" alt="VettaFi">
+                                <img src="../img/tmx.png" class="img-fluid w-25" alt="TMX">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-1 fw-bold text-dark" style="font-size: 1em;">
+                        Senior Software Engineer
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <ul>
+                            <li style="margin-bottom: 1em">
+                                Senior Ruby on Rails Engineer developing VettaFi’s Investor Behavioral Intelligence Platform (IBI) a Rails based web application that generates summarized data for ETF indexes, advisors, and webcasts
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Collaborated with a team of 4-12 other engineers on IBI in an agile environment, handling 1-week sprints
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Wrote dozens of test scripts (RSpec) and performed dozens of code reviews
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Maintained (added new pages, updated existing pages, increased performance) VettaFi’s other existing websites (Vettafi.com, ETFTrends.com, ETFDB.com) that handle thousands of users
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Implemented APIs to integrate millions of rows of data stored on an AWS Redshift database to support VettaFi’s websites
+                            </li>
+                        </ul>
+                        <p>
+                            <button class="btn btn-link p-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target=".expandableVettaFiRows" aria-expanded="false" aria-controls="expandableVettaFiRow1 expandableVettaFiRow2 expandableVettaFiRow3 expandableVettaFiRow4" id="toggleVettaFiButton">
+                                Show more...
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse expandableVettaFiRows align-items-start row" id="expandableVettaFiRow1">
+                    <div class="col-lg-1 mb-1">
+                    </div>
+                    <div class="col-lg-3 mb-1">
+                        <a href="../img/explorer-login.jpg" target="_blank">
+                            <img src="../img/explorer-login.jpg" class="img-fluid w-100 mb-1" alt="IBI Page">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            As a full-time employee for VettaFi (VettaFi was acquired by TMX in 2024), Paul's primary role was on VettaFi's Investor Behavioral Intelligence Platform (IBI).
+                            IBI consolidates electronic traded fund (ETF) data for analysis by brokers and clients.
+                            He added the fre trial login logic and UI.
+                        </p>
+                        <p class="fw-light mb-1">
+                            The work at VettaFi was done mostly in Ruby on Rails.
+                            It was full stack and involved everything from creating the model in the database/migration
+                            to implementing the controller and view. The view was done in React.js and turbo frames.
+                            Additionally, APIs had to be written to import the data from an AWS Redshift database.
+                            Most of the development was done in one-week sprints. Paul worked remotely for VettaFi
+                        </p>.
+                    </div>
+                </div>
+                <div class="collapse expandableVettaFiRows align-items-start row" id="expandableVettaFiRow2">
+                    <div class="col-lg-1 mb-1">
+                    </div>
+                    <div class="col-lg-3 mb-1">
+                        <a href="../img/explorer.jpg" target="_blank">
+                            <img src="../img/explorer.jpg" class="img-fluid w-100" alt="IBI Page">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            Paul added the Geograpy tab including the charts (using HighChart).
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse expandableVettaFiRows align-items-start row" id="expandableVettaFiRow3">
+                    <div class="col-lg-1 mb-1">
+                    </div>
+                    <div class="col-lg-3 mb-1">
+                        <a href="../img/soloist.jpg" target="_blank">
+                            <img src="../img/soloist.jpg" class="img-fluid w-100" alt="Solpist page">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            Additionally, Paul worked on soloist (another view of the ETF data) for managers.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse expandableVettaFiRows align-items-start row" id="expandableVettaFiRow4">
+                    <div class="col-lg-1 mb-1">
+                    </div>
+                    <div class="col-lg-3 mb-1">
+                        <a href="../img/vettafi-indexing.jpg" target="_blank">
+                            <img src="../img/vettafi-indexing.jpg" class="img-fluid w-100" alt="Indexing Page">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            Paul worked on some of VettaFi's existing websites. In this example Paul redesigned this page. Changing the layout and content including adapting it for mobile browsers. He also worked on the contact registration form.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+<!--*** Entrision *** -->
+            <div class="container" id="entrision">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                        <a class="text-decoration-none" href="https://www.facebook.com/entrision/" target="_blank">
+                            <h1 class="display-4 fw-bold mb-11 text-dark">Entrision</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-1">
+                        <div class="bg-white mb-1 p-3 shadow" style="position: relative;">
+                            <a href="https://www.facebook.com/entrision/    " target="_blank">
+                                <img src="../img/entrision.png" class="img-fluid w-25" alt="Entrision">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-1 fw-bold text-dark" style="font-size: 1em;">
+                        Senior Software Engineer
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <ul>
+                            <li style="margin-bottom: 1em">
+                                Senior Software Engineer on Terminus’ Email Experience product a web-based SaaS application in Rails
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Integrated Terminus’ Email Experience with platforms like Salesforce, Google, HubSpot, Marketo
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Interfaced with 4-8 other engineers to develop solutions in an agile environment
+                            </li>
+                        </ul>
+                        <p>
+                            <button class="btn btn-link p-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target=".expandableEntrisionRows" aria-expanded="false" aria-controls="expandableEntrisionRow1" id="toggleEntrisionButton">
+                                Show more...
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse expandableEntrisionRows align-items-start row" id="expandableEntrisionRow1">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            Paul worked as a full-time employee for Entrision,
+                            a software consulting company. As an Entrision employee,
+                            he worked for Terminus an account based marketing (ABM)
+                            company that provides sales tools for reaching out to
+                            prospects. The primary product was Email Experience.
+                            Email Experience integrates with platforms
+                            like Salesforce, Google, HubSpot, Marketo.
+                            Paul was in a group tasked with maintaining and enhancing
+                            Email Experience as well as integrating with Salesforce.
+                            Paul primarily worked on the back end providing
+                            data.
+                        </p>
+                        <p class="fw-light mb-1">
+                            Work for Entrision was done in Ruby on Rails, Java,
+                            Python, and shell scripts. Paul worked remotely for Entrision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+
+<!--*** ACS *** -->
+            <div class="container" id="acs">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                        <a class="text-decoration-none" href="https://airworthinesscert.com/" target="_blank">
+                            <h1 class="display-4 fw-bold mb-1 text-dark" style="font-size: 3em;">Airworthiness Certification Services</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-1">
+                        <div class="bg-white mb-1 p-3 shadow" style="position: relative;">
+                            <a href="https://airworthinesscert.com" target="_blank">
+                                <img src="../img/acs.png" class="img-fluid w-75" alt="ACS">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 mb-1 fw-bold text-dark" style="font-size: 1em;">
+                        Senior Software Engineer
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <ul>
+                            <li style="margin-bottom: 1em">
+                                Principal Software Engineer on Airworthiness Certification Services’ Process & Artifact Compliance Tool (PACT) web application that aids in DO-178/DO-254 certification
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Wrote PACT in Ruby on Rails from the ground up including the database design/integration, back-end, and front-end
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Developed the Tool Qualification Plan and Software Verification and Validation Plan for PACT
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Supported Airworthiness Certification Services legacy IIS web application
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Managed Airworthiness Certification Services hardware, networks, GitLab server, and backup/archival system
+                            </li>
+                        </ul>
+                        <p>
+                            <button class="btn btn-link p-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target=".expandableAcsRows" aria-expanded="false" aria-controls="expandableAcsFiRow1 expandableAcsRow2" id="toggleAcsButton">
+                                Show more...
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                 <div class="collapse expandableAcsRows align-items-start row" id="expandableAcsRow1">
+                   <div class="col-lg-1 mb-1">
+                    </div>
+                    <div class="col-lg-3 mb-1">
+                        <a href="../img/pact.jpeg" target="_blank">
+                            <img src="../img/pact.jpeg" class="img-fluid w-75 mb-1" alt="PACT Logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            As a full-time employee for Airworthiness Certification Services (ACS),
+                            Paul wrote and maintained all features for the Process & Artifact Compliance Tool (PACT).
+                            PACT is a web application that aids in the process of certification for various regulatory processes,
+                            specifically it was originally designed for DO-178/DO-254 certification for the FAA, but it is flexable enough for most regulatory processes.
+                        </p>
+                        <p class="fw-light mb-1">
+                            In addition to the work on PACT, Paul also enhanced and maintained ACS' and Patmos Engineering's
+                            existing websites. He also maintained a legacy system that PACT was based on in IIS.
+                            Paul also maintained all DevOps for ACS, including their servers (both physical and AWS).
+                            Paul oversaw the security site certification for ACS and implemented a plan for Cybersecurity Maturity Model Certification (CMMC) implementation.
+                        </p>
+                        <p class="fw-light mb-1">
+                            The work at ACS was done in Ruby on Rails.
+                            It was full stack and involved everything from creating the model in the database/migration
+                            to implementing the controller and view.
+                            Paul worked remotely for Airworthiness Certification Services.
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse expandableAcsRows align-items-start row" id="expandableAcsRow2">
+                    <div class="col-lg-1 mb-1">
+                    </div>
+                    <div class="col-lg-3">
+                        <a href="../img/pact-landing-screen.png" target="_blank" class="mb-1">
+                            <img src="../img/pact-landing-screen.png" class="img-fluid w-100" alt="Pact Landing Page">
+                        </a>
+                        <a href="../img/pact-login-screen.png" target="_blank" class="mb-1">
+                            <img src="../img/pact-login-screen.png" class="img-fluid w-100" alt="PACT Login Screen">
+                        </a>
+                        <a href="../img/pact-projects-screen.png" target="_blank" class="mb-1">
+                            <img src="../img/pact-projects-screen.png" class="img-fluid w-100" alt="PACT Projects Screen">
+                        </a>
+                        <a href="../img/pact-high-level-requirements-screen.png" target="_blank" class="mb-1">
+                            <img src="../img/pact-high-level-requirements-screen.png" class="img-fluid w-100" alt="PACT Hight Level Requirements Page">
+                        </a>
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            PACT is a web-based application that aids in the compliance process for FAA approval
+                            of DO-178/DO-254 projects. PACT assists in the development and archiving of compliance
+                            artifacts.
+                        </p>
+
+                        <p class="h6 text-primary text-uppercase">Introduction to PACT Video</p>
+                        <video controls>
+                            <source src="../img/introduction-to-pact.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <p class="h6 text-primary text-uppercase">Introduction to PACT Projects Video</p>
+                        <video controls>
+                            <source src="../img/introduction-to-pact-projects.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <p class="h6 text-primary text-uppercase">
+                            <a href="../docs/PACT_Manual_02_2020.pdf" target="_blank">PACT Manual</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+<!--*** CFS *** -->
+            <div class="container" id="cfs">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                        <a class="text-decoration-none" href="https://cusonet.com" target="_blank">
+                            <h1 class="display-4 fw-bold mb-1 text-dark" style="font-size: 2.7em;">Orcas Net/CFS</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-1">
+                        <div class="bg-white mb-1 p-3 shadow" style="position: relative;">
+                            <a href="https://cusonet.com" target="_blank">
+                                <img src="../img/orcasnet-logo.gif" class="img-fluid w-50 me-lg-5" alt="Orcas Net Logo" >
+                                <img src="../img/cfs-logo.gif" class="img-fluid w-25" alt="CFS Logo">
+                            </a>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 mb-1 fw-bold text-dark" style="font-size: 1em;">
+                        Senior Software Engineer
+                    </div>
+               </div>
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <ul>
+                            <li style="margin-bottom: 1em">
+                                Enhanced dataVISION, Orcas Net’s proprietary web-based CRM application that handles tens of thousands of Advisor commissions and Investor positions
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Aided in the conversion from the legacy system to Ruby on Rails
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Designed and implemented the system used to transfer financial data from data aggregators into dataVISION
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Automated dataVISION‘s EDI/ETL systems including writing web-scraping “robots” to import data from providers that did not provide an FTP or API interface. This interface handled billions of dollars in client’s positions and advisor’s commissions daily
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Wrote a data editor that permitted users to correct data issues and setup new imports. This was done in Ruby on Rails with an angular front-end.
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Administered hardware and networks at Orcas Net’s local office (the company that was acquired by CUSO)
+`                            </li>
+                        </ul>
+                        <p>
+                            <button class="btn btn-link p-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target=".expandableCfsRows" aria-expanded="false" aria-controls="expandableCfsRow1" id="toggleCfsButton">
+                                Show more...
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse expandableCfsRows align-items-start row" id="expandableCfsRow1">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            Paul worked As a full-time employee for Orcas Net / CUSO Financial Services (CFS)
+                            (Orcas Net was acquired by CFS in 2016), Orcas Net developed dataVISION (DV).
+                            DV is a customer relationship management (CRM) for Broker/Dealers.
+                            It maintains information on positions held by clients and commissions due to brokers.
+                            It receives data from funds and data aggregators, processes it and provides it to the Broker/Dealers.
+                            Paul was responsible for all the data imported into DV. In order to do this, he wrote
+                            Electronic Data Interchange (EDI) programs that received the data in various ways (APIs,
+                            FTPed files, and wrote several robots to acquire the data from websites when no other
+                            method was available). Paul also wrote a data editor to permit the editing of incoming data.
+                            Paul also help migrate DV from a legacy system to Ruby on Rails.
+                        </p>
+                        <p class="fw-light mb-1">
+                            Work for CFS was done in Ruby on Rails. Paul worked on-site at Orcas Net but worked
+                            remotely when Orcas Net was purchased by CFS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+<!--*** Amazon *** -->
+            <div class="container" id="amazon">
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                        <a class="text-decoration-none" href="https://amazon.com" target="_blank">
+                            <h1 class="display-4 fw-bold mb-1 text-dark" >Amazon</h1>
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mb-1">
+                        <div class="bg-white mb-1 p-3 shadow" style="position: relative;">
+                            <a href="https://amazon.com" target="_blank">
+                                <img src="../img/amazon.png" class="img-fluid w-50" alt="Amazon Logo">
+                            </a>
+                        </div>
+                    </div>
+                     <div class="col-lg-3 mb-1 fw-bold text-dark" style="font-size: 1em;">
+                        Developer / Technical Lead
+                    </div>
+                </div>
+                <div class="align-items-center row">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <ul>
+                            <li style="margin-bottom: 1em">
+                                Coded in C, Perl & SQL to design and implement all shipping software that Amazon.com used at the time. At peak load, the system shipped about half a million packages a day (hundreds of packages a minute) and ran 24/7 365 days a year
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Improved shipping time from 30 seconds down to less than 4 seconds (an 85% reduction)
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Wrote the software for a Client/Server based real-time automated package processing and labeling system (SLAM)
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Created “Smart Manifest” a shipping costing system that automatically balanced cost, speed, and carrier reliability
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Acted as a major contributor in the opening of Amazon’s Music, Video, Toys, and Consumer Electronics stores
+                            </li>
+                            <li style="margin-bottom: 1em">
+                                Facilitated the opening of 11 different DCs (including 6 international). The fastest in just a few days
+`                            </li>
+                             <li style="margin-bottom: 1em">
+                                 Led a team of 3 other engineers
+`                            </li>
+                             <li style="margin-bottom: 1em">
+                                 Awarded a “Just Do It” award for overall accomplishments at Amazon.com
+`                            </li>
+                        </ul>
+                        <p>
+                            <button class="btn btn-link p-0 text-dark" type="button" data-bs-toggle="collapse" data-bs-target=".expandableAmazonRows" aria-expanded="false" aria-controls="expandableAmazonRow1" id="toggleAmazonButton">
+                                Show more...
+                            </button>
+                        </p>
+                    </div>
+                </div>
+                <div class="collapse expandableAmazonRows align-items-start row" id="expandableAmazonRow1">
+                    <div class="col-lg-4 mb-1">
+                    </div>
+                    <div class="col-lg-8 mb-1">
+                        <p class="fw-light mb-1">
+                            When Paul first came to Amazon.com the DC Software group
+                            consisted of 3 people, Amazon.com only shipped books,
+                            it had only 2 DCs, and it could take 30 seconds or more to process a single shipment.
+                            By the time that Paul left, the DC Software group had nearly 100 engineers,
+                            Amazon.com shipped dozens of different types of products,
+                            it had 11 DCs (4 in foreign countries) and it took less than 4 seconds to process
+                            every shipment (including printing the shipping label). As mentioned above,
+                            Paul designed and implemented all the software that Amazon.com used to ship its
+                            packages (everything after the shipment has been packed). This included calculating
+                            the cost &amp; speed for various carriers, using various factors to choose a carrier,
+                            creating the shipping label, manifest and customs documents and recording the
+                            information about the shipment. All this is done in an automated real time environment
+                            that required that this process take no more than 4 seconds per package
+                            (including the time to print the label). The system was flexible enough to handle
+                            the requirements of many different carriers even foreign carriers (including Japan).
+                            Additionally, it could change seasonally and handle special promotions with just a
+                            day or so notice.
+                        </p>
+                        <p class="fw-light mb-1">
+                            The work for Amazon was done in C, C++, and Perl under
+                            HP Unix connecting to an Oracle SQL database. Paul worked on-site.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="page_footer"></div>
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('page_footer').innerHTML = data)
+                .catch(error => console.error('Error loading file:', error));
+        </script>
+
+        <script>
+            function setupToggle(elementId, className) {
+                const toggleButton = document.getElementById(elementId);
+                const rows = document.querySelectorAll(className);
+
+                if (toggleButton && rows) {
+                    rows.forEach(element => {
+                        element.addEventListener('show.bs.collapse', () => {
+                            toggleButton.textContent = 'Show less...';
+                        });
+
+                        element.addEventListener('hide.bs.collapse', () => {
+                            toggleButton.textContent = 'Show more...';
+                        });
+                    });
+                }
+            }
+
+            setupToggle('toggleVettaFiButton', '.expandableVettaFiRows');
+            setupToggle('toggleEntrisionButton', '.expandableEntrisionRows');
+            setupToggle('toggleAcsButton', '.expandableAcsRows');
+            setupToggle('toggleCfsButton', '.expandableCfsRows');
+            setupToggle('toggleAmazonButton', '.expandableAmazonRows');
+        </script>
+
+        <script src="../assets/js"></script>
+        <script src="../assets/js/popper.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
