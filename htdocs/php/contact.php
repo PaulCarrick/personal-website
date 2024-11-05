@@ -6,7 +6,7 @@ require '../vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Your secret key from Google reCAPTCHA
-    $secretKey = "6LfMwnEqAAAAAP7M_ruuL8-pDpnfiarYS_YWfDog";
+    $secretKey = getenv('CAPTCHA_SECRET_KEY');
 
     // CAPTCHA validation
     $captcha = $_POST['g-recaptcha-response'];
