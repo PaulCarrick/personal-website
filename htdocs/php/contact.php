@@ -3,11 +3,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require '../vendor/autoload.php';
+require_once 'init.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Your secret key from Google reCAPTCHA
     $secretKey = getenv('CAPTCHA_SECRET_KEY');
-
     // CAPTCHA validation
     $captcha = $_POST['g-recaptcha-response'];
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captcha");
